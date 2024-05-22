@@ -16,6 +16,9 @@ A dbt project to calculate metrics every Engineering Manager neeed
 
 ## Setup guide : From data collection to transformation to visualization
 
+![architecture](https://github.com/gitcommitshow/open-engineering-metrics/assets/56937085/86c9a8f4-e774-4331-86a9-81c8c02eb153)
+
+
 ### 1. Set up a Postgres database
 If you don't have any central data warehouse set up for all your organization data, the recommended method with the least changes and maintenance required would be to set up a serverless instance of [Neondb](https://neon.tech/github), the free tier is enough for this project.
 
