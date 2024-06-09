@@ -33,5 +33,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   open_engineering_metrics:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    github_events:
       +materialized: view
+      +schema: "{{ var('target_schema', 'dbt') }}"
+
+
+vars:
+  source_schema: 'git_hub_events_ock'
+  target_schema: 'dbt'
